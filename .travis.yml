@@ -1,0 +1,8 @@
+language: python
+python:
+  - "3.4"
+install:
+  - pip install -r requiremnts.txt
+  - python manage.py migrate
+script:
+  - python manage.py test polls  
